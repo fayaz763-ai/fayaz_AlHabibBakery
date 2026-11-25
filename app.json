@@ -2,36 +2,14 @@
   "expo": {
     "name": "Al Habib Bakery",
     "slug": "al-habib-bakery",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
-    "splash": {
-      "backgroundColor": "#F5F5DC",
-      "resizeMode": "contain"
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true,
-      "infoPlist": {
-        "NSCameraUsageDescription": "This app needs access to your camera to take product photos.",
-        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to select product images."
-      }
-    },
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#F5F5DC"
-      },
-      "permissions": [
-        "CAMERA",
-        "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE"
-      ]
-    },
-    "web": {
-      "bundler": "metro"
-    }
+    "splash": { "backgroundColor": "#F5F5DC", "resizeMode": "contain" },
+    "assetBundlePatterns": ["**/*"],
+    "extra": { "apiUrl": "${EXPO_PUBLIC_API_URL}" },
+    "ios": { "supportsTablet": true, "infoPlist": { "NSCameraUsageDescription": "This app needs access to your camera to take product photos.", "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to select product images." } },
+    "android": { "adaptiveIcon": { "backgroundColor": "#F5F5DC" }, "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"] },
+    "web": { "bundler": "metro" }
   }
 }
-
